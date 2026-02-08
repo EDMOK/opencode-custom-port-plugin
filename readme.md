@@ -48,7 +48,7 @@ This is an early release. If you encounter issues or have feedback, please creat
 
 ---
 
-# opencode VS Code 扩展（中文说明）
+# opencode VS Code 自定义端口扩展（中文说明）
 
 将 [opencode](https://opencode.ai) 直接集成到您的开发工作流中的 Visual Studio Code 扩展。
 
