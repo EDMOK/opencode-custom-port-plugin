@@ -13,6 +13,7 @@ This extension requires the [opencode CLI](https://opencode.ai) to be installed 
 - **Context Awareness**: Automatically share your current selection or tab with opencode.
 - **File Reference Shortcuts**: Use `Cmd+Option+K` (Mac) or `Alt+Ctrl+K` (Linux/Windows) to insert file references. For example, `@File#L37-42`.
 - **Port Configuration**: Configure a fixed port number for opencode server in VS Code settings, or leave empty for automatic port assignment (16384-65535).
+- **Automatic Port Conflict Resolution** (Windows): When using a fixed port, the extension automatically detects if the port is already in use and terminates the existing process before starting a new session.
 
 ## Configuration
 
