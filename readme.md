@@ -46,4 +46,54 @@ This is an early release. If you encounter issues or have feedback, please creat
 3. Search for "opencode"
 4. Click Install
 
+---
+
+# opencode VS Code 扩展（中文说明）
+
+将 [opencode](https://opencode.ai) 直接集成到您的开发工作流中的 Visual Studio Code 扩展。
+
+## 前提条件
+
+此扩展需要安装 [opencode CLI](https://opencode.ai)。请访问 [opencode.ai](https://opencode.ai) 获取安装说明。
+
+## 功能特性
+
+- **快速启动**：使用 `Cmd+Esc`（Mac）或 `Ctrl+Esc`（Windows/Linux）在分屏终端视图中打开 opencode，或者如果已有会话正在运行则聚焦到现有会话。
+- **新会话**：使用 `Cmd+Shift+Esc`（Mac）或 `Ctrl+Shift+Esc`（Windows/Linux）启动新的 opencode 终端会话，即使已有会话处于打开状态。您还可以点击编辑器标题栏中的 opencode 按钮。
+- **上下文感知**：自动与 opencode 共享您当前的选择或标签页。
+- **文件引用快捷键**：使用 `Cmd+Option+K`（Mac）或 `Alt+Ctrl+K`（Linux/Windows）插入文件引用。例如：`@File#L37-42`。
+- **端口配置**：在 VS Code 设置中为 opencode 服务器配置固定端口号，或留空以自动分配端口（16384-65535）。
+- **自动端口冲突解决**（Windows）：使用固定端口时，扩展会自动检测端口是否已被占用，并在启动新会话前终止现有进程。
+
+## 配置
+
+您可以通过 VS Code 设置自定义扩展行为：
+
+- **opencode.port**：为 opencode 服务器设置固定端口号（1024-65535）。留空将在 16384-65535 范围内自动分配端口。
+
+访问设置方法：
+1. 打开 VS Code 设置（Mac 上 `Cmd+,`，Windows/Linux 上 `Ctrl+,`）
+2. 搜索 "opencode"
+3. 根据需要配置端口设置
+
+## 命令
+
+扩展提供以下可通过命令面板（`Cmd+Shift+P` / `Ctrl+Shift+P`）访问的命令：
+
+- **Open opencode**：在当前终端中启动 opencode 或聚焦现有会话
+- **Open opencode in new tab**：在新终端标签页中启动新的 opencode 会话
+- **Add Filepath to Terminal**：将当前文件路径引用插入到 opencode 中
+
+## 支持
+
+这是早期版本。如果遇到问题或有反馈，请在 https://github.com/EDMOK/opencode-vscode-extension/issues 创建 issue。
+
+## 安装
+
+### 从 VS Code 市场安装
+1. 打开 VS Code
+2. 进入扩展视图（`Cmd+Shift+X` / `Ctrl+Shift+X`）
+3. 搜索 "opencode"
+4. 点击安装
+
 
