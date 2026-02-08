@@ -46,24 +46,4 @@ This is an early release. If you encounter issues or have feedback, please creat
 3. Search for "opencode"
 4. Click Install
 
-### Manual Installation
-1. Download the latest `.vsix` file from the [releases page](https://github.com/EDMOK/opencode-vscode-extension/releases)
-2. In VS Code, open Command Palette (`Cmd+Shift+P` / `Ctrl+Shift+P`)
-3. Run "Extensions: Install from VSIX..."
-4. Select the downloaded `.vsix` file
 
-## Development
-
-1. Open the project directory in VS Code
-2. Run `bun install` to install dependencies
-3. Press `F5` to start debugging - This launches a new VS Code window with the extension loaded
-
-#### Making Changes
-
-`tsc` and `esbuild` watchers run automatically during debugging (visible in the Terminal tab). Changes to the extension are automatically rebuilt in the background.
-
-To test your changes:
-
-1. In the debug VS Code window, press `Cmd+Shift+P` / `Ctrl+Shift+P`
-2. Search for `Developer: Reload Window`
-3. Reload to see your changes without restarting the debug session
